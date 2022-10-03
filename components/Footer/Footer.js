@@ -1,57 +1,40 @@
 // import logoImg from "../../public/img/kalkulyator-samogonshchika.png";
-import s from "./footer.module.scss"
+import s from "./footer.module.scss";
 import ExportedImage from "next-image-export-optimizer";
-import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png"
+import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 
 const Footer = () => {
   return (
     <div className={s.footer}>
-      <ExportedImage
+      <div className={s.footerBlock}>
+        <div className={s.footerBlockContainer}>
+          <div className={s.footerCol}>
+            <h4 className={s.footerColTitile}>SAMOGONCALC</h4>
+            <p>
+              Набор быстрых онлайн-калькуляторов для винокуров и самогонщиков
+            </p>
+          </div>
+          <div className={s.footerCol}>
+            <ExportedImage
               src={SamogonCalcLogo}
-              alt="Vercel Logo"
-              width={72}
-              height={16}
+              alt="Калькулятор самогонщика Samogoncalc"
+              width={150}
+              height={150}
             />
-      SamogonCalc.ru © 2021-2022
+          </div>
+          <div className={s.footerCol}>
+            <h4 className={s.footerColTitile}>Контакты</h4>
+            <p>Подписывайтесь на наш канал</p>
+            <p>
+              "Самогон и самогонщики"{" "}
+              <a href="https://telegram.me/samogonco">@samogonco</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={s.copyright}>SamogonCalc.ru © 2021-2022</div>
     </div>
-  )
-    // <div className="mt-4">
-    //   <footer className="footer text-center">
-    //     <div className="container">
-    //       <div className="row">
-    //         <div className="col-lg-4 mb-5 mb-lg-0">
-    //           <h4 className="text-uppercase mb-4">SamogonCalc</h4>
-    //           <p className="lead mb-0">
-    //             Набор быстрых онлайн-калькуляторов для винокуров и самогонщиков
-    //           </p>
-    //         </div>
-    //         <div className="col-lg-4 mb-5 mb-lg-0">
-    //           <img
-    //             src={logoImg}
-    //             width="150"
-    //             height="150"
-    //             alt="калькулятор самогонщика Samogoncalc"
-    //           />
-    //         </div>
-    //         <div className="col-lg-4">
-    //           <h4 className="text-uppercase mb-4">Контакты</h4>
-    //           <p className="lead mb-0">
-    //             Подписывайтесь на наш канал
-    //             <br />
-    //             "Самогон и самогонщики"{" "}
-    //             <a href="https://telegram.me/samogonco">@samogonco</a>
-    //           </p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </footer>
-    //   <div className="copyright py-4 text-center text-white">
-    //     <div className="container">
-    //       <small>SamogonCalc.ru © 2021-2022 </small>
-    //     </div>
-    //   </div>
-    // </div>
-
+  );
 };
 
 export default Footer;
