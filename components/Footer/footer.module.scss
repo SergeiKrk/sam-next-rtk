@@ -13,6 +13,9 @@
 .footerColTitile {
   @apply uppercase text-2xl font-bold my-4;
 }
+.footerTelegram {
+  @apply inline animate-ping text-2xl rounded-2xl;
+}
 .copyright {
   @apply bg-slate-900 text-white py-4 text-xs md:text-sm;
 }

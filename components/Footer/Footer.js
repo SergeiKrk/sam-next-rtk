@@ -2,6 +2,7 @@
 import s from "./footer.module.scss";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
+import { FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -24,10 +25,12 @@ const Footer = () => {
           </div>
           <div className={s.footerCol}>
             <h4 className={s.footerColTitile}>Контакты</h4>
-            <p>Подписывайтесь на наш канал</p>
+            <p>Подписывайтесь на наш канал </p>
+            <p>"Самогон и самогонщики"</p>
             <p>
-              "Самогон и самогонщики"{" "}
-              <a href="https://telegram.me/samogonco">@samogonco</a>
+              <a href="https://telegram.me/samogonco">
+                <FaTelegram className={s.footerTelegram} /> @samogonco
+              </a>
             </p>
           </div>
         </div>
