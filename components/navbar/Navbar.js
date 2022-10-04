@@ -5,6 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 import Link from "next/link";
+import { FaTelegram } from "react-icons/fa";
 
 const solutions = [
   {
@@ -169,11 +170,17 @@ export default function Navbar() {
             >
               Про самогонные аппараты
             </a>
+            <a
+              href="#"
+              className="text-base font-medium text-white hover:text-[#1abc9c]"
+            >
+              О нас
+            </a>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <Link href="#">
-              <a className="whitespace-nowrap text-base font-medium text-white hover:text-[#1abc9c]">
-                О нас
+            <Link href="https://telegram.me/samogonco">
+              <a>
+                <FaTelegram className="inline animate-ping text-2xl rounded-2xl" />
               </a>
             </Link>
           </div>

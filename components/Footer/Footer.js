@@ -3,6 +3,7 @@ import s from "./footer.module.scss";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 import { FaTelegram } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -28,9 +29,11 @@ const Footer = () => {
             <p>Подписывайтесь на наш канал </p>
             <p>"Самогон и самогонщики"</p>
             <p>
-              <a href="https://telegram.me/samogonco">
-                <FaTelegram className={s.footerTelegram} /> @samogonco
-              </a>
+              <Link href="https://telegram.me/samogonco">
+                <a>
+                  <FaTelegram className={s.footerTelegram} /> @samogonco
+                </a>
+              </Link>
             </p>
           </div>
         </div>
