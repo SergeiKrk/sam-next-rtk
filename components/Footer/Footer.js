@@ -19,7 +19,6 @@ const Footer = () => {
             <ExportedImage
               src={SamogonCalcLogo}
               alt="Калькулятор самогонщика Samogoncalc"
-              className="aspect"
               width={150}
               height={150}
             />
