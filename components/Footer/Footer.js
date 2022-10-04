@@ -31,7 +31,7 @@ const Footer = () => {
             <p>
               <Link href="https://telegram.me/samogonco">
                 <a>
-                  <FaTelegram className={s.footerTelegram} /> @samogonco
+                  <FaTelegram className={s.footerTelegram} /><span className="text-sky-500"> @samogonco</span>
                 </a>
               </Link>
             </p>

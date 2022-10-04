@@ -180,9 +180,12 @@ export default function Navbar() {
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link href="https://telegram.me/samogonco">
               <a>
-                <FaTelegram className="inline animate-ping text-2xl rounded-2xl" />
+                      <span className="text-white hover:text-[#1abc9c]">Наш канал </span>
+                <FaTelegram className="inline text-xl rounded-2xl text-sky-400 animate-ping ml-2" />
+                {/* <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span> */}
               </a>
             </Link>
+            
           </div>
         </div>
       </div>
