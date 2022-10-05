@@ -1,44 +1,93 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { FaAirbnb } from "react-icons/fa";
+import { FaAirbnb, FaBars, FaTimes } from "react-icons/fa";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
+import KalkulyatorRazbavleniyaSamogonaVodoj from "../../public/img/kalkulyator-razbavleniya-samogona-vodoj.png";
 import Link from "next/link";
 import { FaTelegram } from "react-icons/fa";
 
 const solutions = [
   {
-    name: "Analytics",
+    name: "Разбавление самогона водой",
+    description: "Поможет смешать дистиллят с водой в нужных пропорциях",
+    href: "#",
+    icon: "/img/kalkulyator-razbavleniya-samogona-vodoj.png",
+  },
+  {
+    name: "Отбор голов",
+    description: "Рассчитает объем «голов» и чистого спирта в дистилляте",
+    href: "#",
+    icon: "/img/kalkulyator-otbor-golov.png",
+  },
+  {
+    name: "Дробная перегонка",
     description:
-      "Get a better understanding of where your traffic is coming from.",
+      "Поможет отобрать «голов» и «хвосты» в процессе дробной перегонки",
     href: "#",
-    icon: FaAirbnb,
+    icon: "/img/kalkulyator-drobnoj-peregonki.png",
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers in a more meaningful way.",
+    name: "Разбавление самогона (после 1-го перегона)",
+    description: "Поможет подготовить спирт-сырец к дробной перегонке",
     href: "#",
-    icon: FaAirbnb,
+    icon: "/img/razbavlenie-samogona-vodoj-posle-pervoj-peregonki.png",
   },
   {
-    name: "Security",
-    description: "Your customers' data will be safe and secure.",
+    name: "Расчет абсолютного спирта",
+    description: "Рассчитает объем абсолютного 100° и 96.6° спирта",
     href: "#",
-    icon: FaAirbnb,
+    icon: "/img/kalkulyator-absolyutnogo-spirta.png",
   },
   {
-    name: "Integrations",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: FaAirbnb,
-  },
-  {
-    name: "Automations",
+    name: "Смешивание спиртов",
     description:
-      "Build strategic funnels that will drive your customers to convert",
+      "Поможет узнать, какой градус будет после смешивания двух спиртосодержащих жидкостей",
     href: "#",
-    icon: FaAirbnb,
+    icon: "/img/kalkulyator-smeshivaniya-spirtov.png",
+  },
+  {
+    name: "Себестоимость самогона",
+    description:
+      "Рассчитает стоимость получившегося дистиллята исходя из затрат на сырье и ингредиенты",
+    href: "#",
+    icon: "/img/kalkulyator-sebestoimosti-samogona.png",
+  },
+  {
+    name: "Примерная стоимость самогона",
+    description:
+      "Рассчитает примерную себестоимость и объем самогона даже если вы еще не ставили брагу",
+    href: "#",
+    icon: "/img/primernaya-stoimost-samogona.png",
+  },
+  {
+    name: "Расчет браги из разного сырья",
+    description:
+      "Вычислит крепость браги, оптимальные пропорции сырья и воды для затора",
+    href: "#",
+    icon: "/img/kalkulyator-saharnoj-bragi.png",
+  },
+  {
+    name: "Расчет водки 40° из спирта",
+    description:
+      "Поможет разбавить спирт или дистиллят до водочной крепости в 40°",
+    href: "#",
+    icon: "/img/kalkulyator-vodki-iz-spirta.png",
+  },
+  {
+    name: "Коррекция спирта по температуре",
+    description:
+      "Рассчитает реальную крепость при любой температуре дистиллята",
+    href: "#",
+    icon: "/img/kalkulyator-spirta-ot-temperatury.png",
+  },
+  {
+    name: "Замена сахара декстрозой",
+    description:
+      "Рассчитает сколько потребуется декстрозы для аналогичного выхода спирта из браги на сахаре.",
+    href: "#",
+    icon: "/img/kalkulyator-zameny-sahara-glyukozoj.png",
   },
 ];
 const callsToAction = [
@@ -79,7 +128,7 @@ export default function Navbar() {
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2">
               <span className="sr-only">Open menu</span>
-              <FaAirbnb className="h-6 w-6" aria-hidden="true" />
+              <FaBars className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
@@ -120,9 +169,12 @@ export default function Navbar() {
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
-                              <item.icon
+                              <ExportedImage
+                                src={item.icon}
+                                alt={item.name}
                                 className="h-6 w-6 flex-shrink-0 text-[#1abc9c]"
-                                aria-hidden="true"
+                                width={35}
+                                height={35}
                               />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">
@@ -180,12 +232,13 @@ export default function Navbar() {
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link href="https://telegram.me/samogonco">
               <a>
-                      <span className="text-white hover:text-[#1abc9c]">Наш канал </span>
+                <span className="text-white hover:text-[#1abc9c]">
+                  Наш канал{" "}
+                </span>
                 <FaTelegram className="inline text-xl rounded-2xl text-sky-400 animate-ping ml-2" />
                 {/* <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span> */}
               </a>
             </Link>
-            
           </div>
         </div>
       </div>
@@ -214,9 +267,9 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:text-[#1abc9c]">
-                    <span className="sr-only">Close menu</span>
-                    <FaAirbnb className="h-6 w-6" aria-hidden="true" />
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset visited:text-[#1abc9c]">
+                    <span className="sr-only">Закрыть меню</span>
+                    <FaTimes className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
@@ -228,9 +281,12 @@ export default function Navbar() {
                       href={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                     >
-                      <item.icon
+                      <ExportedImage
+                        src={item.icon}
+                        alt={item.name}
                         className="h-6 w-6 flex-shrink-0 text-[#1abc9c]"
-                        aria-hidden="true"
+                        width={35}
+                        height={35}
                       />
                       <span className="ml-3 text-base font-medium text-gray-900">
                         {item.name}
@@ -263,12 +319,6 @@ export default function Navbar() {
                 >
                   Sign up
                 </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{" "}
-                  <a href="#" className="text-[#1abc9c] hover:text-[#1abc9c]">
-                    Sign in
-                  </a>
-                </p>
               </div>
             </div>
           </div>
