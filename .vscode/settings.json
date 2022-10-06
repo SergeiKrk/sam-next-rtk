@@ -1,0 +1,7 @@
+{
+  "editor.wordWrap": "on",
+  "html.format.wrapLineLength": 180,
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrapColumn": 160,
+  "code-eol.forceShowOnWordWrap": true
+}

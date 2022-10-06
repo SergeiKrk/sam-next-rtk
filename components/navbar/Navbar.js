@@ -4,7 +4,6 @@ import { FaAirbnb, FaBars, FaTimes } from "react-icons/fa";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
-import KalkulyatorRazbavleniyaSamogonaVodoj from "../../public/img/kalkulyator-razbavleniya-samogona-vodoj.png";
 import Link from "next/link";
 import { FaTelegram } from "react-icons/fa";
 
@@ -126,8 +125,11 @@ export default function Navbar() {
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2">
-              <span className="sr-only">Open menu</span>
+            <Popover.Button
+              className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-700 
+            hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2"
+            >
+              <span className="sr-only">Открыть меню</span>
               <FaBars className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
@@ -160,31 +162,30 @@ export default function Navbar() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-10 ml-4 mt-3 w-screen max-w-6xl transform px-2 sm:px-0 lg:left-1/2 lg:ml-60 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid grid-cols-2 gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {solutions.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
-                            >
-                              <ExportedImage
-                                src={item.icon}
-                                alt={item.name}
-                                className="h-6 w-6 flex-shrink-0 text-[#1abc9c]"
-                                width={35}
-                                height={35}
-                              />
-                              <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">
-                                  {item.name}
-                                </p>
-                                <p className="mt-1 text-sm text-gray-500">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </a>
+                            <Link key={item.name} href={item.href}>
+                              <a className="-m-3 flex items-start rounded-lg p-2 hover:bg-gray-50">
+                                <div className="w-14">
+                                  <ExportedImage
+                                    src={item.icon}
+                                    alt={item.name}
+                                    width={45}
+                                    height={45}
+                                  />
+                                </div>
+                                <div className="ml-4">
+                                  <p className="text-base font-medium text-gray-900">
+                                    {item.name}
+                                  </p>
+                                  <p className="mt-1 text-sm text-gray-500">
+                                    {item.description}
+                                  </p>
+                                </div>
+                              </a>
+                            </Link>
                           ))}
                         </div>
                         {/* <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
@@ -267,7 +268,10 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset visited:text-[#1abc9c]">
+                  <Popover.Button
+                    className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 
+                  hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset visited:text-[#1abc9c]"
+                  >
                     <span className="sr-only">Закрыть меню</span>
                     <FaTimes className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -279,7 +283,7 @@ export default function Navbar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                      className="-m-3 flex items-center rounded-md p-2 hover:bg-gray-50"
                     >
                       <ExportedImage
                         src={item.icon}
