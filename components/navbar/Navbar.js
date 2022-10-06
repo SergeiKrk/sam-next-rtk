@@ -112,7 +112,7 @@ export default function Navbar() {
   return (
     <Popover className="relative bg-slate-800">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        <div className="flex items-center justifNy-between py-2 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">SamogonCalc</span>
@@ -124,14 +124,28 @@ export default function Navbar() {
               />
             </a>
           </div>
-          <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button
-              className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-700 
-            hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2"
-            >
-              <span className="sr-only">Открыть меню</span>
-              <FaBars className="h-6 w-6" aria-hidden="true" />
-            </Popover.Button>
+          <div className="inline-flex items-center justify-center md:hidden">
+            <div className="mr-4 px-4 inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-100 
+              hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2">
+              <Link href="https://telegram.me/samogonco">
+                <a>
+                  <span className="text-white hover:text-[#1abc9c]">
+                    подпишись{" "}
+                  </span>
+                  <FaTelegram className="inline text-lg rounded-xl text-sky-400 animate-ping ml-2" />
+                  {/* <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span> */}
+                </a>
+              </Link>
+            </div>
+            <div className="-my-2 -mr-2">
+              <Popover.Button
+                className="inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-100 
+              hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2"
+              >
+                <span className="sr-only">Открыть меню</span>
+                <FaBars className="h-6 w-6" aria-hidden="true" />
+              </Popover.Button>
+            </div>
           </div>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Popover className="relative">
@@ -259,15 +273,9 @@ export default function Navbar() {
         >
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt="Your Company"
-                  />
-                </div>
-                <div className="-mr-2">
+              <div className="flex justify-end items-center">
+                
+                <div className="mr-2">
                   <Popover.Button
                     className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 
                   hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset visited:text-[#1abc9c]"
