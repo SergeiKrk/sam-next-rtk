@@ -126,13 +126,13 @@ export default function Navbar() {
           </div>
           <div className="inline-flex items-center justify-center md:hidden">
             <div className="mr-4 px-4 inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-100 
-              hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2">
+              hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2 focus:text-gray-900">
               <Link href="https://telegram.me/samogonco">
                 <a>
-                  <span className="text-white hover:text-[#1abc9c]">
+                  <span className="text-white hover:text-gray-900">
                     подпишись{" "}
                   </span>
-                  <FaTelegram className="inline text-lg rounded-xl text-sky-400 animate-ping ml-2" />
+                  <FaTelegram className="inline text-lg rounded-xl text-sky-500 animate-ping ml-2" />
                   {/* <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span> */}
                 </a>
               </Link>
