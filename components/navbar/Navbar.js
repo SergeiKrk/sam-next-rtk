@@ -157,8 +157,8 @@ export default function Navbar() {
             >
               <Link href="https://telegram.me/samogonco">
                 <a>
-                  <span className="text-white hover:text-gray-900">
-                    подпишись{" "}
+                  <span className="text-white text-xs hover:text-gray-900">
+                    подпишись на наш канал{" "}
                   </span>
                   <FaTelegram className="inline text-lg rounded-xl text-sky-500 animate-ping ml-2" />
                   {/* <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span> */}
