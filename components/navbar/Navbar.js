@@ -1,13 +1,20 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { FaAirbnb, FaBars, FaTimes } from "react-icons/fa";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 import Link from "next/link";
-import { FaTelegram } from "react-icons/fa";
+import {
+  FaTelegram,
+  FaInfo,
+  FaTimes,
+  FaBars,
+  FaAirbnb,
+  FaWineGlassAlt,
+  FaFlask,
+} from "react-icons/fa";
 
-const solutions = [
+const itemNav = [
   {
     name: "Разбавление самогона водой",
     description: "Поможет смешать дистиллят с водой в нужных пропорциях",
@@ -89,6 +96,25 @@ const solutions = [
     icon: "/img/kalkulyator-zameny-sahara-glyukozoj.png",
   },
 ];
+
+const itemNavInfo = [
+  {
+    name: "Про самогон",
+    href: "#",
+    icon: FaWineGlassAlt,
+  },
+  {
+    name: "Про оборудование",
+    href: "#",
+    icon: FaFlask,
+  },
+  {
+    name: "О нас",
+    href: "#",
+    icon: FaInfo,
+  },
+];
+
 const callsToAction = [
   { name: "Watch Demo", href: "#", icon: FaAirbnb },
   { name: "Contact Sales", href: "#", icon: FaAirbnb },
@@ -125,8 +151,10 @@ export default function Navbar() {
             </a>
           </div>
           <div className="inline-flex items-center justify-center md:hidden">
-            <div className="mr-4 px-4 inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-100 
-              hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2 focus:text-gray-900">
+            <div
+              className="mr-4 px-4 inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-100 
+              hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-offset-2 focus:text-gray-900"
+            >
               <Link href="https://telegram.me/samogonco">
                 <a>
                   <span className="text-white hover:text-gray-900">
@@ -179,7 +207,7 @@ export default function Navbar() {
                     <Popover.Panel className="absolute z-10 ml-4 mt-3 w-screen max-w-6xl transform px-2 sm:px-0 lg:left-1/2 lg:ml-60 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid grid-cols-2 gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                          {solutions.map((item) => (
+                          {itemNav.map((item) => (
                             <Link key={item.name} href={item.href}>
                               <a className="-m-3 flex items-start rounded-lg p-2 hover:bg-gray-50">
                                 <div className="w-14">
@@ -202,22 +230,6 @@ export default function Navbar() {
                             </Link>
                           ))}
                         </div>
-                        {/* <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                          {callsToAction.map((item) => (
-                            <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
-                                className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
-                              >
-                                <item.icon
-                                  className="h-6 w-6 flex-shrink-0 text-gray-400"
-                                  aria-hidden="true"
-                                />
-                                <span className="ml-3">{item.name}</span>
-                              </a>
-                            </div>
-                          ))}
-                        </div> */}
                       </div>
                     </Popover.Panel>
                   </Transition>
@@ -225,24 +237,13 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-[#1abc9c]"
-            >
-              Про самогон
-            </a>
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-[#1abc9c]"
-            >
-              Про самогонные аппараты
-            </a>
-            <a
-              href="#"
-              className="text-base font-medium text-white hover:text-[#1abc9c]"
-            >
-              О нас
-            </a>
+            {itemNavInfo.map((itm) => (
+              <Link href={itm.href}>
+                <a className="text-base font-medium text-white hover:text-[#1abc9c]">
+                  {itm.name}
+                </a>
+              </Link>
+            ))}
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link href="https://telegram.me/samogonco">
@@ -251,7 +252,6 @@ export default function Navbar() {
                   Наш канал{" "}
                 </span>
                 <FaTelegram className="inline text-xl rounded-2xl text-sky-400 animate-ping ml-2" />
-                {/* <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-400 opacity-75"></span> */}
               </a>
             </Link>
           </div>
@@ -274,7 +274,6 @@ export default function Navbar() {
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex justify-end items-center">
-                
                 <div className="mr-2">
                   <Popover.Button
                     className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 
@@ -285,52 +284,47 @@ export default function Navbar() {
                   </Popover.Button>
                 </div>
               </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-8">
-                  {solutions.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-m-3 flex items-center rounded-md p-2 hover:bg-gray-50"
-                    >
-                      <ExportedImage
-                        src={item.icon}
-                        alt={item.name}
-                        className="h-6 w-6 flex-shrink-0 text-[#1abc9c]"
-                        width={35}
-                        height={35}
-                      />
-                      <span className="ml-3 text-base font-medium text-gray-900">
-                        {item.name}
-                      </span>
-                    </a>
+              <div className="space-y-6 py-6 px-5">
+                <div className="border-b-2 border-gray-300 py-4 grid grid-cols-2 gap-y-4 gap-x-8">
+                  {itemNavInfo.map((itm) => (
+                    <Link href={itm.href}>
+                      <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                        <span className="rounded bg-gray-700 p-1">
+                          <itm.icon
+                            className="h-6 w-6 flex-shrink-0 inline-block text-[#1abc9c]"
+                            aria-hidden="true"
+                          />
+                        </span>{" "}
+                        {itm.name}
+                      </a>
+                    </Link>
                   ))}
-                </nav>
-              </div>
-            </div>
-            <div className="space-y-6 py-6 px-5">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Pricing
-                </a>
-
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Docs
-                </a>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-text-[#1abc9c] px-4 py-2 text-base font-medium text-white shadow-sm hover:text-[#1abc9c]"
-                >
-                  Sign up
-                </a>
+                </div>
+                <div>
+                  <p>Список калькуляторов:</p>
+                </div>
+                <div className="mt-6">
+                  <nav className="grid gap-y-8">
+                    {itemNav.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="-m-3 flex items-center rounded-md p-1 hover:bg-gray-50"
+                      >
+                        <ExportedImage
+                          src={item.icon}
+                          alt={item.name}
+                          className="h-6 w-6 flex-shrink-0 text-[#1abc9c]"
+                          width={35}
+                          height={35}
+                        />
+                        <span className="ml-3 text-base font-medium text-gray-900">
+                          {item.name}
+                        </span>
+                      </a>
+                    ))}
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
