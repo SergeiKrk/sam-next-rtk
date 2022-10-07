@@ -115,21 +115,6 @@ const itemNavInfo = [
   },
 ];
 
-const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: FaAirbnb },
-  { name: "Contact Sales", href: "#", icon: FaAirbnb },
-];
-
-const recentPosts = [
-  { id: 1, name: "Boost your conversion rate", href: "#" },
-  {
-    id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
-    href: "#",
-  },
-  { id: 3, name: "Improve your customer experience", href: "#" },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
