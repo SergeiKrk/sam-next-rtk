@@ -4,12 +4,12 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import ExportedImage from "next-image-export-optimizer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 import Link from "next/link";
+import { useState } from "react";
 import {
   FaTelegram,
   FaInfo,
   FaTimes,
   FaBars,
-  FaAirbnb,
   FaWineGlassAlt,
   FaFlask,
 } from "react-icons/fa";
@@ -109,8 +109,8 @@ const itemNavInfo = [
     icon: FaFlask,
   },
   {
-    name: "О нас",
-    href: "#",
+    name: "О проекте",
+    href: "/about",
     icon: FaInfo,
   },
 ];
@@ -120,6 +120,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const [tooltipStatus, setTooltipStatus] = useState(0);
   return (
     <Popover className="relative bg-slate-800">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -149,6 +150,7 @@ export default function Navbar() {
                 </a>
               </Link>
             </div>
+
             <div className="-my-2 -mr-2">
               <Popover.Button
                 className="inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-100 
@@ -232,10 +234,25 @@ export default function Navbar() {
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link href="https://telegram.me/samogonco">
               <a>
-                <span className="text-white hover:text-[#1abc9c]">
-                  Наш канал{" "}
-                </span>
-                <FaTelegram className="inline text-xl rounded-2xl text-sky-400 animate-ping ml-2" />
+                <div
+                  className="relative"
+                  onMouseEnter={() => setTooltipStatus(1)}
+                  onMouseLeave={() => setTooltipStatus(0)}
+                >
+                  <div className="mr-2 cursor-pointer">
+                    <FaTelegram className="inline text-xl rounded-2xl text-sky-400 animate-ping ml-2" />
+                  </div>
+                  {tooltipStatus == 1 && (
+                    <div
+                      role="tooltip"
+                      className="z-20 -mt-9 w-60 absolute transition duration-50 ease-in-out left-0 -ml-60 shadow-lg bg-gray-500 p-4 rounded"
+                    >
+                      <p className="text-xs font-bold text-white pb-1">
+                        Подписывайся на наш Telegram 👉
+                      </p>
+                    </div>
+                  )}
+                </div>
               </a>
             </Link>
           </div>
