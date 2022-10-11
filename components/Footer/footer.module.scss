@@ -1,5 +1,5 @@
 .footer {
-  @apply absolute text-center bottom-0 w-full bottom-0;
+  @apply relative mt-10 bottom-0 text-center bottom-0 w-full bottom-0;
 }
 .footerBlock {
   @apply text-white bg-slate-700;
