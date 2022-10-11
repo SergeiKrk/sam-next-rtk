@@ -28,10 +28,11 @@ const Footer = () => {
             <h4 className={s.footerColTitile}>Контакты</h4>
             <p>Подписывайтесь на наш канал </p>
             <p>"Самогон и самогонщики"</p>
-            <p>
+            <p className="m-4">
               <Link href="https://telegram.me/samogonco">
                 <a>
-                  <FaTelegram className={s.footerTelegram} /><span className="text-sky-500"> @samogonco</span>
+                  <FaTelegram className={s.footerTelegram} />
+                  <span className="text-sky-500"> @samogonco</span>
                 </a>
               </Link>
             </p>
