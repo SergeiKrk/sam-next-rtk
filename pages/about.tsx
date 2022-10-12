@@ -1,7 +1,7 @@
-import { GetStaticProps } from "next";
+import type { NextPage } from "next";
 import Layout from "../components/Layout/Layout";
 
-const About = () => {
+const About: NextPage = () => {
   return (
     <div>
       <Layout>
@@ -44,14 +44,6 @@ const About = () => {
       </Layout>
     </div>
   );
-};
-
-export const getStaticProps: GetStaticProps = async (ctx) => {
-  return {
-    props: {
-      data: null,
-    },
-  };
 };
 
 export default About;

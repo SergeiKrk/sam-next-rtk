@@ -126,15 +126,17 @@ export default function Navbar() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="flex items-center justify-between py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">SamogonCalc</span>
-              <ExportedImage
-                src={SamogonCalcLogo}
-                alt="Калькулятор самогонщика Samogoncalc"
-                width={40}
-                height={40}
-              />
-            </a>
+            <Link href="/">
+              <a>
+                <span className="sr-only">SamogonCalc</span>
+                <ExportedImage
+                  src={SamogonCalcLogo}
+                  alt="Калькулятор самогонщика Samogoncalc"
+                  width={40}
+                  height={40}
+                />
+              </a>
+            </Link>
           </div>
           <div className="inline-flex items-center justify-center md:hidden">
             <div

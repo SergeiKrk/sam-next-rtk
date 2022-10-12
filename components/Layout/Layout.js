@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../Footer/Footer";
 import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 import Navbar from "../navbar/Navbar";
+import Header from "../header/header";
 
 export default function Layout({
   title = "test title",
@@ -32,8 +33,8 @@ export default function Layout({
         <meta property="og:site_name" content="SamogonCalc" />
         <meta property="og:locale" content="ru_RU" />
       </Head>
-
       <Navbar />
+      <Header />
       <div>{children}</div>
       <Footer />
     </>
