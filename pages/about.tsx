@@ -4,7 +4,15 @@ import Layout from "../components/Layout/Layout";
 const About: NextPage = () => {
   return (
     <div>
-      <Layout>
+      <Layout
+        headImg="/img/samogoncalc-bender.png"
+        titlePage="О проекте"
+        descriptionPage="SamogonCalc - Набор быстрых онлайн-калькуляторов для винокуров и самогонщиков"
+        urlSeo="about"
+        title="О проекте - SamogonCalc"
+        description="SamogonCalc - набор быстрых онлайн-калькуляторов для винокуров и самогонщиков"
+        pageCheck="true"
+      >
         <div className="mx-auto max-w-2xl px-4 pt-12 text-lg sm:px-6">
           <p>
             SamogonCalc помог Вам? Помогите и Вы нашему проекту. Вы можете
