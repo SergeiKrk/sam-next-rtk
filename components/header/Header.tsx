@@ -1,12 +1,13 @@
 import s from "./header.module.scss";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
+import ShareButtons from "../shareButtons/ShareButtons";
 
 const Header = ({ headImg, titlePage, descriptionPage, urlSeo }) => {
   return (
     <div className={s.headerBlock}>
       <div>
-        <div className="pt-4 flex justify-center my-12 md:my-24">
+        <div className={s.imageHeadBlock}>
           <ExportedImage
             src={headImg}
             alt={titlePage}
@@ -14,13 +15,14 @@ const Header = ({ headImg, titlePage, descriptionPage, urlSeo }) => {
             height={240}
           />
         </div>
-        <div className="flex justify-center uppercase text-2xl md:text-5xl text-white font-[700]">
-          {titlePage}
+        <div className={s.titleHeadBlock}>{titlePage}</div>
+        <div className={s.descriptionPageBlock}>{descriptionPage}</div>
+        <div className={s.descriptionPageBlock}>
+          <div className={s.lineElement} />
+          <ShareButtons />
+          <div className={s.lineElement} />
         </div>
-        <div className="pt-8 px-8 flex justify-center text-xl md:text-2xl text-white  font-[300]">
-          {descriptionPage}
-        </div>
-        <div className="p-8 mb-6 mt-16  flex justify-center text-xl md:text-2xl text-white">
+        <div className={s.breadCrumbsBlock}>
           {urlSeo === "/" ? (
             ""
           ) : (
