@@ -19,7 +19,12 @@ const Header = ({ headImg, titlePage, descriptionPage, urlSeo }) => {
         <div className={s.descriptionPageBlock}>{descriptionPage}</div>
         <div className={s.descriptionPageBlock}>
           <div className={s.lineElement} />
-          <ShareButtons />
+          <ShareButtons
+            headImg={headImg}
+            urlSeo={urlSeo}
+            titlePage={titlePage}
+            descriptionPage={descriptionPage}
+          />
           <div className={s.lineElement} />
         </div>
         <div className={s.breadCrumbsBlock}>

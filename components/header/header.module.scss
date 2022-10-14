@@ -8,10 +8,10 @@
     @apply flex justify-center uppercase text-2xl md:text-5xl text-white font-[700];
   }
   .descriptionPageBlock {
-    @apply pt-8 px-8 flex justify-center text-xl md:text-2xl text-white  font-[300];
+    @apply pt-8 px-2 flex justify-center text-xl md:text-2xl text-white  font-[300];
 
     .lineElement {
-      @apply my-auto w-20 h-1 mx-2 bg-white border rounded;
+      @apply my-auto h-10 w-1 mb-2 bg-white border rounded animate-bounce;
     }
   }
   .breadCrumbsBlock {

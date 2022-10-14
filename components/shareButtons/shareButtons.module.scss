@@ -2,5 +2,5 @@
   @apply mx-6 my-2 flex flex-row;
 }
 .btnBlock {
-  @apply m-1 p-2 rounded-full border-2;
+  @apply m-1 p-2 rounded-full border-2 hover:bg-slate-800;
 }
