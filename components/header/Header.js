@@ -28,7 +28,7 @@ const Header = ({ headImg, titlePage, descriptionPage, urlSeo }) => {
           <div className={s.lineElement} />
         </div>
         <div className={s.breadCrumbsBlock}>
-          {urlSeo === "/" ? (
+          {urlSeo === "" ? (
             ""
           ) : (
             <div className="border-top">
