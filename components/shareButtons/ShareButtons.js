@@ -65,7 +65,7 @@ const ShareButtons = ({ urlSeo, titlePage, headImg, descriptionPage }) => {
       {tooltipStatus == 1 && (
         <div
           role="tooltip"
-          className="z-20 w-76 absolute transition duration-50 ease-in-out left-0 ml-6 shadow-lg bg-gray-500 p-4 rounded"
+          className="z-20 w-80 absolute transition duration-50 ease-in-out left-0 ml-4 shadow-lg bg-gray-500 p-4 rounded"
         >
           <p className="text-xs font-bold text-white pb-1">
             Обычно, хорошие люди рассказывают обо мне друзьям в соцсетях 👍

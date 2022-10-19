@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../Footer/Footer";
+import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import Header from "../header/Header";
 
@@ -51,7 +51,21 @@ export default function Layout({
         descriptionPage={descriptionPage}
         urlSeo={urlSeo}
       />
-      <div>{children}</div>
+      <div className="mx-auto flex flex-row max-w-6xl pt-12 text-lg sm:px-6">
+        <div>
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum{" "}
+        </div>
+        <div>{children}</div>
+        <div>
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+          ipsum lorem ipsum{" "}
+        </div>
+      </div>
       <Footer />
     </>
   );

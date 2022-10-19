@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/layout/Layout";
 
 const About: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ const About: NextPage = () => {
         description="SamogonCalc - набор быстрых онлайн-калькуляторов для винокуров и самогонщиков"
         pageCheck="true"
       >
-        <div className="mx-auto max-w-2xl px-4 pt-12 text-lg sm:px-6">
+        <div>
           <p>
             SamogonCalc помог Вам? Помогите и Вы нашему проекту. Вы можете
             поспособствовать его развитию довольно простыми действиями:

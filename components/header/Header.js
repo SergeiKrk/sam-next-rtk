@@ -18,14 +18,18 @@ const Header = ({ headImg, titlePage, descriptionPage, urlSeo }) => {
         <div className={s.titleHeadBlock}>{titlePage}</div>
         <div className={s.descriptionPageBlock}>{descriptionPage}</div>
         <div className={s.descriptionPageBlock}>
-          <div className={s.lineElement} />
+          <div className={s.lineElementBlock}>
+            <div className={s.lineElement} />
+          </div>
           <ShareButtons
             headImg={headImg}
             urlSeo={urlSeo}
             titlePage={titlePage}
             descriptionPage={descriptionPage}
           />
-          <div className={s.lineElement} />
+          <div className={s.lineElementBlock}>
+            <div className={s.lineElement} />
+          </div>
         </div>
         <div className={s.breadCrumbsBlock}>
           {urlSeo === "" ? (

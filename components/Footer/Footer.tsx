@@ -5,6 +5,10 @@ import SamogonCalcLogo from "../../public/img/kalkulyator-samogonshchika.png";
 import { FaTelegram } from "react-icons/fa";
 import Link from "next/link";
 
+type FooterType = {
+  Footer: Function;
+};
+
 const Footer = () => {
   return (
     <div className={s.footer}>

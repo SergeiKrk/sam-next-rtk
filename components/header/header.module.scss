@@ -10,8 +10,12 @@
   .descriptionPageBlock {
     @apply pt-8 px-2 flex justify-center text-xl md:text-2xl text-white  font-[300];
 
-    .lineElement {
-      @apply my-auto h-10 w-1 mb-2 bg-white border rounded animate-bounce;
+    .lineElementBlock {
+      @apply animate-bounce h-12 mt-9;
+
+      .lineElement {
+        @apply my-auto h-1 w-10 bg-white border rounded;
+      }
     }
   }
   .breadCrumbsBlock {
