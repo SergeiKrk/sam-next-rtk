@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Layout from "../components/layout/Layout";
+import HomePage from "../components/pages/home/HomePage";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
         title="Калькулятор Самогонщика: Онлайн расчет"
         description="Точные алкогольные онлайн калькуляторы помогут самогонщику рассчитать нужные параметры спирта, дистиллята и браги."
       >
-        1112211
+        <HomePage />
       </Layout>
     </>
   );

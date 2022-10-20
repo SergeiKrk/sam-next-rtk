@@ -51,21 +51,30 @@ export default function Layout({
         descriptionPage={descriptionPage}
         urlSeo={urlSeo}
       />
-      <div className="mx-auto flex flex-row max-w-6xl pt-12 text-lg sm:px-6">
-        <div>
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum{" "}
-        </div>
+
+      {urlSeo === "" ? (
         <div>{children}</div>
-        <div>
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum{" "}
+      ) : (
+        <div className="mx-auto flex flex-row max-w-6xl pt-12 text-lg sm:px-6">
+          <div className="mr-4 basis-1/5">
+            l o r e m i p s u m l o r e m ipsum lorem ipsum lorem ipsum lorem
+            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum
+          </div>
+          <div className="basis-3/5">{children}</div>
+          <div className="ml-2 basis-1/5">
+            <p className="sticky top-0">
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum
+            </p>
+          </div>
         </div>
-      </div>
+      )}
+
       <Footer />
     </>
   );

@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Footer/Footer.js",
-    "components/Layout/Layout.js"
+    "components/layout/Layout.jsx",
+    "components/pages/home/Home.js"
   ],
   "exclude": ["node_modules"]
 }
