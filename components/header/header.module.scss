@@ -8,7 +8,7 @@
     @apply flex justify-center uppercase text-2xl md:text-5xl text-white font-[700];
   }
   .descriptionPageBlock {
-    @apply pt-8 px-2 flex justify-center text-xl md:text-2xl text-white  font-[300];
+    @apply pt-8 px-4 flex justify-center text-xl text-center md:text-2xl text-white  font-[300];
 
     .lineElementBlock {
       @apply animate-bounce h-12 mt-9;
