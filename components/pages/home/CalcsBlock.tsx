@@ -91,21 +91,34 @@ function CalcsBlock() {
     },
   ];
   return (
-    <div className="flex flex-row">
-      {calcsData.map((calc) => (
-        <div className="basis-1/4" key={calc.href}>
-          <Link href={calc.href}>
-            <a>
-              <ExportedImage
-                src={calc.img}
-                alt="Калькулятор самогонщика Samogoncalc"
-                width={200}
-                height={200}
-              />
-            </a>
-          </Link>
-        </div>
-      ))}
+    <div>
+      <div className="grid 2xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 hover:drop-shadow-md">
+        {calcsData.map((calc) => (
+          <div
+            className="m-4 p-2 border-spacing-1 hover:shadow-2xl rounded-xl"
+            key={calc.href}
+          >
+            <Link href={calc.href}>
+              <a>
+                <div className="text-center hover:bg-[#1abc9c] hover:rounded-lg">
+                  <ExportedImage
+                    src={calc.img}
+                    alt="Калькулятор самогонщика Samogoncalc"
+                    width={200}
+                    height={200}
+                  />
+                </div>
+                <div className="mb-3 text-center leading-[1.2rem] font-[700] text-gray-700">
+                  {calc.title}
+                </div>
+                <div className="text-center leading-[1.2rem] font-[400] text-sm text-gray-800">
+                  {calc.description}
+                </div>
+              </a>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
