@@ -21,7 +21,8 @@
     "**/*.tsx",
     "components/Footer/Footer.js",
     "components/layout/Layout.jsx",
-, "components/pages/home/HomePage.jsx"    "components/pages/home/Home.js"
+    "components/pages/home/HomePage.jsx",
+    "components/pages/home/Home.js"
   ],
   "exclude": ["node_modules"]
 }
