@@ -122,7 +122,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const [tooltipStatus, setTooltipStatus] = useState(0);
   return (
-    <Popover className="relative bg-slate-800">
+    <Popover className="sticky top-0 z-30 bg-slate-800">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="flex items-center justify-between py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">

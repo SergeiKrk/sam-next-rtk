@@ -65,7 +65,7 @@ export default function Layout({
           </div>
           <div className="basis-3/5">{children}</div>
           <div className="ml-2 basis-1/5">
-            <p className="sticky top-0">
+            <p className="sticky top-16">
               lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
               ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
               lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
