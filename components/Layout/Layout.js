@@ -55,16 +55,15 @@ export default function Layout({
       {urlSeo === "" ? (
         <div>{children}</div>
       ) : (
-        <div className="mx-auto flex flex-row max-w-6xl pt-12 text-lg sm:px-6">
-          <div className="mr-4 basis-1/5">
-            l o r e m i p s u m l o r e m ipsum lorem ipsum lorem ipsum lorem
-            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum
+        <div className="mx-auto flex flex-row max-w-[1400px] pt-12 text-lg sm:px-6">
+          <div className="mr-8 basis-1 sm:basis-1/4">
+            l o r e m i p s u m l o r e ml o r e m i p s u m l o r e ml o r e m
+            i p s u m l o r e ml o r e m i p s u m l o r e ml o r e m i p s u m
+            l o r e ml o r e m i p s u m l o r e ml o r e m i p s u m l o r e ml
+            o r e m i p s u m l o r e ml o r e m i p s u m l o r e m
           </div>
-          <div className="basis-3/5">{children}</div>
-          <div className="ml-2 basis-1/5">
+          <div className="basis-1 sm:basis-2/4">{children}</div>
+          <div className="ml-8 basis-1 sm:basis-1/4">
             <p className="sticky top-16">
               lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
               ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum

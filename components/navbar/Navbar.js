@@ -43,7 +43,7 @@ const itemNav = [
   {
     name: "Расчет абсолютного спирта",
     description: "Рассчитает объем абсолютного 100° и 96.6° спирта",
-    href: "#",
+    href: "kalkulyator-absolyutnogo-spirta/",
     icon: "/img/kalkulyator-absolyutnogo-spirta.png",
   },
   {
