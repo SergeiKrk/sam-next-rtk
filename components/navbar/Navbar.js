@@ -18,81 +18,81 @@ const itemNav = [
   {
     name: "Разбавление самогона водой",
     description: "Поможет смешать дистиллят с водой в нужных пропорциях",
-    href: "#",
+    href: "kalkulyator-razbavleniya-samogona-vodoj/",
     icon: "/img/kalkulyator-razbavleniya-samogona-vodoj.png",
   },
   {
     name: "Отбор голов",
     description: "Рассчитает объем «голов» и чистого спирта в дистилляте",
-    href: "#",
+    href: "kalkulyator-otbor-golov/",
     icon: "/img/kalkulyator-otbor-golov.png",
   },
   {
     name: "Дробная перегонка",
     description:
       "Поможет отобрать «голов» и «хвосты» в процессе дробной перегонки",
-    href: "#",
+    href: "kalkulyator-drobnoj-peregonki/",
     icon: "/img/kalkulyator-drobnoj-peregonki.png",
   },
   {
     name: "Разбавление самогона (после 1-го перегона)",
     description: "Поможет подготовить спирт-сырец к дробной перегонке",
-    href: "#",
+    href: "razbavlenie-samogona-vodoj-posle-pervoj-peregonki/",
     icon: "/img/razbavlenie-samogona-vodoj-posle-pervoj-peregonki.png",
   },
   {
     name: "Расчет абсолютного спирта",
     description: "Рассчитает объем абсолютного 100° и 96.6° спирта",
-    href: "kalkulyator-absolyutnogo-spirta/",
+    href: "kalkulyator-absolyutnogo-spirta",
     icon: "/img/kalkulyator-absolyutnogo-spirta.png",
   },
   {
     name: "Смешивание спиртов",
     description:
       "Поможет узнать, какой градус будет после смешивания двух спиртосодержащих жидкостей",
-    href: "#",
+    href: "kalkulyator-smeshivaniya-spirtov/",
     icon: "/img/kalkulyator-smeshivaniya-spirtov.png",
   },
   {
     name: "Себестоимость самогона",
     description:
       "Рассчитает стоимость получившегося дистиллята исходя из затрат на сырье и ингредиенты",
-    href: "#",
+    href: "kalkulyator-sebestoimosti-samogona/",
     icon: "/img/kalkulyator-sebestoimosti-samogona.png",
   },
   {
     name: "Примерная стоимость самогона",
     description:
       "Рассчитает примерную себестоимость и объем самогона даже если вы еще не ставили брагу",
-    href: "#",
+    href: "primernaya-stoimost-samogona/",
     icon: "/img/primernaya-stoimost-samogona.png",
   },
   {
     name: "Расчет браги из разного сырья",
     description:
       "Вычислит крепость браги, оптимальные пропорции сырья и воды для затора",
-    href: "#",
+    href: "kalkulyator-saharnoj-bragi/",
     icon: "/img/kalkulyator-saharnoj-bragi.png",
   },
   {
     name: "Расчет водки 40° из спирта",
     description:
       "Поможет разбавить спирт или дистиллят до водочной крепости в 40°",
-    href: "#",
+    href: "kalkulyator-vodki-iz-spirta/",
     icon: "/img/kalkulyator-vodki-iz-spirta.png",
   },
   {
     name: "Коррекция спирта по температуре",
     description:
       "Рассчитает реальную крепость при любой температуре дистиллята",
-    href: "#",
+    href: "kalkulyator-spirta-ot-temperatury/",
     icon: "/img/kalkulyator-spirta-ot-temperatury.png",
   },
   {
     name: "Замена сахара декстрозой",
     description:
       "Рассчитает сколько потребуется декстрозы для аналогичного выхода спирта из браги на сахаре.",
-    href: "#",
+    href: "kalkulyator-zameny-sahara-glyukozoj/",
     icon: "/img/kalkulyator-zameny-sahara-glyukozoj.png",
   },
 ];
