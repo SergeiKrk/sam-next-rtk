@@ -29,8 +29,7 @@ const HomePage = () => {
         <div className="flex justify-center uppercase text-lg text-center sm:text-4xl text-gray-700 font-[700]">
           АЛКОГОЛЬНЫЙ КАЛЬКУЛЯТОР САМОГОНЩИКА: ПРЕИМУЩЕСТВА
         </div>
-        <StarSeparator />
-        <div className="text-xl text-gray-700 max-w-4xl mx-auto font-[200]">
+        <div className="text-xl text-gray-700 max-w-4xl mx-auto font-[200] mt-16">
           Ищите лучший калькулятор самогонщика? Возможно, вы его нашли. Наши
           онлайн калькуляторы:
         </div>
