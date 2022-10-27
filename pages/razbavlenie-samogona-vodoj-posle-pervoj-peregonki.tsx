@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Layout from "../components/layout/Layout";
-import PoslePervojPage from "../components/pages/otborGolov/poslePervoj/PoslePervojPage";
+import PoslePervojPage from "../components/pages/poslePervoj/PoslePervojPage";
 
 const PoslePervoj: NextPage = () => {
   return (
