@@ -113,8 +113,9 @@ const PoslePervojPage = () => {
         первой строке - крепость после разбавления, а на пересечении - объем
         воды, который нужно долить.
       </p>
-      <div className="flex flex-nowrap">
-        <table className="border-collapse max-w-xs border text-sm mt-6">
+
+      <div className="w-full overflow-auto touch-auto">
+        <table className="max-w-none h-auto border-collapse border text-sm mt-6">
           <thead>
             <tr>
               <td className="p-2 border">было/стало</td>
