@@ -113,236 +113,238 @@ const PoslePervojPage = () => {
         первой строке - крепость после разбавления, а на пересечении - объем
         воды, который нужно долить.
       </p>
-      <table className="border-collapse max-w-xs border text-sm mt-6">
-        <thead>
-          <tr>
-            <td className="p-2 border">было/стало</td>
-            <td className="p-2 border">90%</td>
-            <td className="p-2 border">85%</td>
-            <td className="p-2 border">80%</td>
-            <td className="p-2 border">75%</td>
-            <td className="p-2 border">70%</td>
-            <td className="p-2 border">65%</td>
-            <td className="p-2 border">60%</td>
-            <td className="p-2 border">55%</td>
-            <td className="p-2 border">50%</td>
-            <td className="p-2 border">45%</td>
-            <td className="p-2 border">40%</td>
-            <td className="p-2 border">35%</td>
-            <td className="p-2 border">30%</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="p-2 border">95%</td>
-            <td className="p-2 border">64</td>
-            <td className="p-2 border">133</td>
-            <td className="p-2 border">209</td>
-            <td className="p-2 border">295</td>
-            <td className="p-2 border">391</td>
-            <td className="p-2 border">501</td>
-            <td className="p-2 border">629</td>
-            <td className="p-2 border">779</td>
-            <td className="p-2 border">957</td>
-            <td className="p-2 border">1174</td>
-            <td className="p-2 border">1443</td>
-            <td className="p-2 border">1785</td>
-            <td className="p-2 border">2239</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">90%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">65</td>
-            <td className="p-2 border">138</td>
-            <td className="p-2 border">218</td>
-            <td className="p-2 border">310</td>
-            <td className="p-2 border">414</td>
-            <td className="p-2 border">535</td>
-            <td className="p-2 border">677</td>
-            <td className="p-2 border">847</td>
-            <td className="p-2 border">1052</td>
-            <td className="p-2 border">1306</td>
-            <td className="p-2 border">1630</td>
-            <td className="p-2 border">2061</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">85%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">68</td>
-            <td className="p-2 border">144</td>
-            <td className="p-2 border">231</td>
-            <td className="p-2 border">329</td>
-            <td className="p-2 border">443</td>
-            <td className="p-2 border">578</td>
-            <td className="p-2 border">738</td>
-            <td className="p-2 border">932</td>
-            <td className="p-2 border">1172</td>
-            <td className="p-2 border">1478</td>
-            <td className="p-2 border">1884</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">80%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">72</td>
-            <td className="p-2 border">153</td>
-            <td className="p-2 border">246</td>
-            <td className="p-2 border">353</td>
-            <td className="p-2 border">480</td>
-            <td className="p-2 border">630</td>
-            <td className="p-2 border">812</td>
-            <td className="p-2 border">1039</td>
-            <td className="p-2 border">1327</td>
-            <td className="p-2 border">1709</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">75%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">76</td>
-            <td className="p-2 border">163</td>
-            <td className="p-2 border">264</td>
-            <td className="p-2 border">382</td>
-            <td className="p-2 border">523</td>
-            <td className="p-2 border">694</td>
-            <td className="p-2 border">906</td>
-            <td className="p-2 border">1177</td>
-            <td className="p-2 border">1535</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">70%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">81</td>
-            <td className="p-2 border">175</td>
-            <td className="p-2 border">285</td>
-            <td className="p-2 border">417</td>
-            <td className="p-2 border">577</td>
-            <td className="p-2 border">774</td>
-            <td className="p-2 border">1027</td>
-            <td className="p-2 border">1360</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">65%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">88</td>
-            <td className="p-2 border">190</td>
-            <td className="p-2 border">311</td>
-            <td className="p-2 border">460</td>
-            <td className="p-2 border">644</td>
-            <td className="p-2 border">878</td>
-            <td className="p-2 border">1189</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">60%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">95</td>
-            <td className="p-2 border">207</td>
-            <td className="p-2 border">344</td>
-            <td className="p-2 border">514</td>
-            <td className="p-2 border">730</td>
-            <td className="p-2 border">1017</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">55%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">103</td>
-            <td className="p-2 border">229</td>
-            <td className="p-2 border">384</td>
-            <td className="p-2 border">583</td>
-            <td className="p-2 border">845</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">50%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">114</td>
-            <td className="p-2 border">255</td>
-            <td className="p-2 border">436</td>
-            <td className="p-2 border">674</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">45%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">127</td>
-            <td className="p-2 border">290</td>
-            <td className="p-2 border">505</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">40%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">144</td>
-            <td className="p-2 border">335</td>
-          </tr>
-          <tr>
-            <td className="p-2 border">35%</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">-</td>
-            <td className="p-2 border">167</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="flex flex-nowrap">
+        <table className="border-collapse max-w-xs border text-sm mt-6">
+          <thead>
+            <tr>
+              <td className="p-2 border">было/стало</td>
+              <td className="p-2 border">90%</td>
+              <td className="p-2 border">85%</td>
+              <td className="p-2 border">80%</td>
+              <td className="p-2 border">75%</td>
+              <td className="p-2 border">70%</td>
+              <td className="p-2 border">65%</td>
+              <td className="p-2 border">60%</td>
+              <td className="p-2 border">55%</td>
+              <td className="p-2 border">50%</td>
+              <td className="p-2 border">45%</td>
+              <td className="p-2 border">40%</td>
+              <td className="p-2 border">35%</td>
+              <td className="p-2 border">30%</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-2 border">95%</td>
+              <td className="p-2 border">64</td>
+              <td className="p-2 border">133</td>
+              <td className="p-2 border">209</td>
+              <td className="p-2 border">295</td>
+              <td className="p-2 border">391</td>
+              <td className="p-2 border">501</td>
+              <td className="p-2 border">629</td>
+              <td className="p-2 border">779</td>
+              <td className="p-2 border">957</td>
+              <td className="p-2 border">1174</td>
+              <td className="p-2 border">1443</td>
+              <td className="p-2 border">1785</td>
+              <td className="p-2 border">2239</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">90%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">65</td>
+              <td className="p-2 border">138</td>
+              <td className="p-2 border">218</td>
+              <td className="p-2 border">310</td>
+              <td className="p-2 border">414</td>
+              <td className="p-2 border">535</td>
+              <td className="p-2 border">677</td>
+              <td className="p-2 border">847</td>
+              <td className="p-2 border">1052</td>
+              <td className="p-2 border">1306</td>
+              <td className="p-2 border">1630</td>
+              <td className="p-2 border">2061</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">85%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">68</td>
+              <td className="p-2 border">144</td>
+              <td className="p-2 border">231</td>
+              <td className="p-2 border">329</td>
+              <td className="p-2 border">443</td>
+              <td className="p-2 border">578</td>
+              <td className="p-2 border">738</td>
+              <td className="p-2 border">932</td>
+              <td className="p-2 border">1172</td>
+              <td className="p-2 border">1478</td>
+              <td className="p-2 border">1884</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">80%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">72</td>
+              <td className="p-2 border">153</td>
+              <td className="p-2 border">246</td>
+              <td className="p-2 border">353</td>
+              <td className="p-2 border">480</td>
+              <td className="p-2 border">630</td>
+              <td className="p-2 border">812</td>
+              <td className="p-2 border">1039</td>
+              <td className="p-2 border">1327</td>
+              <td className="p-2 border">1709</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">75%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">76</td>
+              <td className="p-2 border">163</td>
+              <td className="p-2 border">264</td>
+              <td className="p-2 border">382</td>
+              <td className="p-2 border">523</td>
+              <td className="p-2 border">694</td>
+              <td className="p-2 border">906</td>
+              <td className="p-2 border">1177</td>
+              <td className="p-2 border">1535</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">70%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">81</td>
+              <td className="p-2 border">175</td>
+              <td className="p-2 border">285</td>
+              <td className="p-2 border">417</td>
+              <td className="p-2 border">577</td>
+              <td className="p-2 border">774</td>
+              <td className="p-2 border">1027</td>
+              <td className="p-2 border">1360</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">65%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">88</td>
+              <td className="p-2 border">190</td>
+              <td className="p-2 border">311</td>
+              <td className="p-2 border">460</td>
+              <td className="p-2 border">644</td>
+              <td className="p-2 border">878</td>
+              <td className="p-2 border">1189</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">60%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">95</td>
+              <td className="p-2 border">207</td>
+              <td className="p-2 border">344</td>
+              <td className="p-2 border">514</td>
+              <td className="p-2 border">730</td>
+              <td className="p-2 border">1017</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">55%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">103</td>
+              <td className="p-2 border">229</td>
+              <td className="p-2 border">384</td>
+              <td className="p-2 border">583</td>
+              <td className="p-2 border">845</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">50%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">114</td>
+              <td className="p-2 border">255</td>
+              <td className="p-2 border">436</td>
+              <td className="p-2 border">674</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">45%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">127</td>
+              <td className="p-2 border">290</td>
+              <td className="p-2 border">505</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">40%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">144</td>
+              <td className="p-2 border">335</td>
+            </tr>
+            <tr>
+              <td className="p-2 border">35%</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">-</td>
+              <td className="p-2 border">167</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <h2 className="text-4xl mt-6">
         Как правильно развести самогон до 40 градусов?
       </h2>
