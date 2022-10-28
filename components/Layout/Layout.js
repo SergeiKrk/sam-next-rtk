@@ -56,14 +56,14 @@ export default function Layout({
         <div>{children}</div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mx-auto max-w-[1400px] pt-12 text-lg sm:px-6">
-          <div className="px-4">
+          <div className="px-4 mt-6">
             l o r e m i p s u m l o r e ml o r e m i p s u m l o r e ml o r e m
             i p s u m l o r e ml o r e m i p s u m l o r e ml o r e m i p s u m
             l o r e ml o r e m i p s u m l o r e ml o r e m i p s u m l o r e ml
             o r e m i p s u m l o r e ml o r e m i p s u m l o r e m
           </div>
           <div className="px-4 col-span-2">{children}</div>
-          <div className="px-4">
+          <div className="px-4 mt-6">
             <p className="sticky top-16">
               lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
               ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
