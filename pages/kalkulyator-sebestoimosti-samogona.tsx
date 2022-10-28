@@ -1,22 +1,22 @@
 import type { NextPage } from "next";
 import Layout from "../components/layout/Layout";
-import SebestoimApproxPage from "../components/pages/sebestoimApprox/SebestoimApproxPage";
+import SebestoimSamogonaPage from "../components/pages/sebestoimSamogona/SebestoimSamogonaPage";
 
-const SebestoimApprox: NextPage = () => {
+const PoslePervoj: NextPage = () => {
   return (
     <>
       <Layout
         headImg="/img/kalkulyator-sebestoimosti-samogona.png"
-        titlePage="Расчет стоимости будущего самогона"
-        descriptionPage="Калькулятор поможет рассчитать примерную стоимость сахарного и зернового дистиллята, исходя из массы и стоимости сырья"
+        titlePage="Расчет себестоимости самогона"
+        descriptionPage="Поможет оценить стоимость самогона, если Ваш дистиллят уже готов и вы хотите посчитать его себестоимость"
         urlSeo="kalkulyator-sebestoimosti-samogona/"
-        title="Калькулятор стоимости самогона (сахарного и зернового)"
-        description="Калькулятор поможет рассчитать онлайн стоимость будущего сахарного и зернового дистиллята (самогона), исходя из массы и стоимости сырья."
+        title="Калькулятор себестоимости самогона"
+        description="Калькулятор поможет рассчитать онлайн себестоимость уже готового дистиллята, исходя из массы, стоимости сырья и объема готового самогона"
       >
-        <SebestoimApproxPage />
+        <SebestoimSamogonaPage />
       </Layout>
     </>
   );
 };
 
-export default SebestoimApprox;
+export default PoslePervoj;
