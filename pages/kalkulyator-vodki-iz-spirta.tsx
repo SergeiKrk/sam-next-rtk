@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Layout from "../components/layout/Layout";
-import VodkaPage from "../components/pages/Vodka/VodkaPage";
+import VodkaPage from "../components/pages/vodka/VodkaPage";
 
 const Vodka: NextPage = () => {
   return (
