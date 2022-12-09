@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import Header from "../header/Header";
+import NaShavuhu from "../naShavuhu";
 
 export default function Layout({
   title,
@@ -64,12 +65,21 @@ export default function Layout({
           </div>
           <div className="px-4 col-span-2">{children}</div>
           <div className="px-4 mt-6">
-            <p className="sticky top-16">
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum
-            </p>
+            <div className="sticky top-16">
+              <div>
+                l o r e m i p s u m l o r e ml o r e m i p s u m l o r e ml o r
+                e m i p s u m l o r e ml o r e m i p s u m l o r e ml o r e m i
+                p s u m l o r e ml o r e m i p s u m l o r e ml o r e m i p s u
+                m l o r e ml o r e m i p s u m l o r e ml o r e m i p s u m l o
+                r e m l o r e m i p s u m l o r e ml o r e m i p s u m l o r e
+                ml o r e m i p s u m l o r e ml o r e m i p s u m l o r e ml o r
+                e m i p s u m l o r e ml o r e m i p s u m l o r e ml o r e m i
+                p s u m l o r e ml o r e m i p s u m l o r e ml o r e m i p s u
+                m l o r e m e m i p s u m l o r e ml o r e m i p s u m l o r e
+                ml o r e m i p s u m l
+              </div>
+              <NaShavuhu />
+            </div>
           </div>
         </div>
       )}

@@ -100,7 +100,7 @@ const itemNav = [
 const itemNavInfo = [
   {
     name: "Про самогон",
-    href: "#",
+    href: "/samogon",
     icon: FaWineGlassAlt,
   },
   {
