@@ -16,8 +16,8 @@ const NaShavuhu = () => {
               />
             </div>
 
-            <div className="font-bold pb-1">
-              <p className="-mt-6 text-md">☝️ Тут такое дело...</p>
+            <div className="font-bold pb-1 -mt-6 ">
+              <p className="text-md">☝️ Тут такое дело...</p>
               <p className="text-xs">на шаурму для разработчика</p>
               <p className="text-xs">samogoncalc.ru собираем</p>
             </div>
